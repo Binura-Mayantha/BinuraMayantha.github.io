@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: "Dumb";
+    src:url(3Dumb-webfont.woff);
+}
+
+@font-face{
+    font-family: "Alpha";
+    src: url(alpha_echo-webfont.woff);
+}
+
+@font-face{
+    font-family: "blackjack";
+    src: url(blackjack-webfont.woff);
+}
+
+@font-face{
+    font-family: "Hack";
+    src: url(hack-regular.woff);
+}
+
+
+
+body{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    background-color: #222;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+
+/*  code for the nav bar  */
+
+.navbar{
+    display: flex;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+.logo{
+    position: relative;
+    font-family: Alpha;
+    background-image: linear-gradient(#008080,  #004C4C, #E3BC30);
+    -webkit-background-clip: text;
+    color: transparent;
+    left: 10px;
+    font-size: 2rem;
+}
+
+.navbar ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar ul li a:hover{
+    background-image: linear-gradient(#008080,  #004C4C, #E3BC30);
+}
+
+
+.navbar ul li a img{
+    position: relative;
+    top: 6px;
+    left: 7.5px;
+    width: 25px;
+}
+
+
+
+
+
+.lnk{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+    display: flex;
+    width: 70%;
+    background: linear-gradient(#004C4C, #008080, #E3BC30) padding-box,linear-gradient(45deg, #004C4C, #008080, #E3BC30) border-box;
+    border: 15px solid transparent;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 2px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+/*    border-color: red;*/
+/*    border-image: linear-gradient(45deg, #004C4C, #008080);*/
+}
+
+.space{
+    padding: 2px;
+}
+
+.self{
+  padding-top: 40px;
+  padding: 40px;
+  font-family: Hack;
+  font-size: 3vh;
+  background-image: linear-gradient(90deg, #004C4C, #008080, #E3BC30);
+  background: linear-gradient(90deg, #004C4C, #008080, #E3BC30);
+  -webkit-background-clip: text;
+  font-style: none;
+  color: transparent;
+  
+}
+
+
+
+.lnkbx{
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.lnk p{
+    padding-top: 30px;
+    color: #7D7E80;
+}
+
+h1{
+  display: flex;
+  border-bottom: 5px solid #004C4C;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
