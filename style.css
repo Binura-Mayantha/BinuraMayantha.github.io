@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 30px;
+  background-image: linear-gradient(90deg, #004C4C, #008080, #E3BC30);
+  -webkit-background-clip: text;
+  font-style: none;
+  color: transparent;
+}
+.container .heading h3{
+  font-size: 150%;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #004C4C;
+}
+
+/*.container .heading h3 span{
+  font-weight: 100;
+}
+*/
+
+p{
+  padding-top: 30px;
+  color: #7D7E80;
+}
+
+.container .box{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream .lnk img{
+  width: 100%;
+  padding: 1px;
+  background: linear-gradient(#004C4C, #008080, #E3BC30) padding-box,linear-gradient(45deg, #004C4C, #008080, #E3BC30) border-box;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 2rem;
+
+}
+
+
+
+
+
+
+
+}

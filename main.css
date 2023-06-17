@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "Dumb";
+    src:url(3Dumb-webfont.woff);
+}
+
+@font-face{
+    font-family: "Alpha";
+    src: url(alpha_echo-webfont.woff);
+}
+
+@font-face{
+    font-family: "blackjack";
+    src: url(blackjack-webfont.woff);
+}
+
+@font-face{
+    font-family: "Hack";
+    src: url(hack-regular.woff);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+
+/*  code for the nav bar  */
+
+.navbar{
+    display: flex;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+.logo{
+    position: relative;
+    font-family: Alpha;
+    background-image: linear-gradient(#008080,  #004C4C, #E3BC30);
+    -webkit-background-clip: text;
+    color: transparent;
+    left: 10px;
+    font-size: 2rem;
+}
+
+.navbar ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar ul li a:hover{
+    background-image: linear-gradient(#008080,  #004C4C, #E3BC30);
+}
+
+
+.navbar ul li a img{
+    position: relative;
+    top: 6px;
+    left: 7.5px;
+    width: 25px;
+}
+
+.dev{
+    padding-top: 400px;
+    font-size: 1rem;
+    color: #7D7E80;
+}
+
+
+/*  
+   #background image  
+ */
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform-style: preserve-3d;
+}
+
+.img {
+    width: 110vh;
+    height: 100vh;
+    transform: translateZ(-20px) scale(4);
+    z-index: -1;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  text  */
+
+.contentWrapper{
+    position: absolute;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60vh;
+    top: 80%;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Hack;
+    font-size: 1.5rem;
+    background-color: #222;
+
+}
+
+
+.header{
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    top: 30%;
+    text-align: center;
+    transform: translateZ(-10px) scale(2);
+    line-height: 8rem;
+}
+
+.hello{
+    position: relative;
+    display: inline-flex;
+    font-family: blackjack;
+    font-size: 5rem;
+    background: linear-gradient(#E3BC30, #008080,  #004C4C, #E3BC30);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 3px 3px linear-gradient(#004C4C, #008080, #E3BC30);
+    transition: all 0.3s ease-out;
+}
+
+.space{
+    position: relative;
+    display: inline-flex;
+    font-family: blackjack;
+    font-size: 5rem;
+    background-image: linear-gradient(#008080,  #004C4C, #E3BC30);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 3px 3px linear-gradient(#004C4C, #008080, #E3BC30);
+    padding-right: 20px;
+    transition: all 0.3s ease-out;
+}
+
+
+.steady{
+    position: relative;
+    display: inline-flex;
+    font-family: blackjack;
+    font-size: 5rem;
+    background-image: linear-gradient(#008080,  #004C4C, #E3BC30);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 3px 3px linear-gradient(#004C4C, #008080, #E3BC30);
+    padding-left: 20px;
+    transition: all 0.3s ease-out;
+}
+
+
+.hello:hover{
+    transform: scale(1,0.7);
+    color: #B2D8D8;
+}
+
+.space:hover{
+    transform: scale(1,0.7);
+    color: #B2D8D8;
+}
+
+.steady:hover{
+    transform: scale(1,0.7);
+    color: #B2D8D8;
+}
+
+
+
+.para{
+    padding: 40px;
+    font-family: Hack;
+    font-size: 1.5rem;
+    background-image: linear-gradient(90deg, #E3BC30 , #004C4C, #008080, #E3BC30);
+    -webkit-background-clip: text;
+    font-style: none;
+    color: transparent;
+}
+
+.para::before{
+    display: flex;
+    content: "<p>";
+    font-family: blackjack;
+    padding-left: 50px;
+    font-size: 1.5rem;
+    color: #848dbf;
+    text-align: left;
+}
+
+.para::after{
+    display: flex;
+    content: "</p>";
+    font-family: blackjack;
+    padding-left: 50px;
+    font-size: 1.5rem;
+    color: #848dbf;
+    text-align: left;
+}
+
+
+.link {
+    text-decoration: none;
+    font-family: Hack;
+    font-size: 1.5rem;
+    color: #66B2B2;
+}
+
+.button1{
+    background: linear-gradient(#004C4C, #008080, #E3BC30) padding-box,linear-gradient(45deg, #004C4C, #008080, #E3BC30) border-box;
+    border: 15px solid transparent;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+/*    border-color: red;*/
+/*    border-image: linear-gradient(45deg, #004C4C, #008080);*/
+}
+
+
+.lnk{
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+    background: linear-gradient(#004C4C, #008080, #E3BC30) padding-box,linear-gradient(45deg, #004C4C, #008080, #E3BC30) border-box;
+    border: 15px solid transparent;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+/*    border-color: red;*/
+/*    border-image: linear-gradient(45deg, #004C4C, #008080);*/
+}
+
+.self{
+  padding-top: 40px;
+  /*padding: 40px;*/
+  font-family: Hack;
+  font-size: 3rem;
+  background-image: linear-gradient(90deg, #004C4C, #008080, #E3BC30);
+  -webkit-background-clip: text;
+  font-style: none;
+  color: transparent;
+}
+
+
+
